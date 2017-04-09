@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="yelp_table.js"></script>
+    <link rel="stylesheet" type="text/css" href="gmaps.css">
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="text/javascript" src="gmaps.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB53IsIPLZZPcrCEnGcwic669QjadSgCIU&callback=initMap">
+    </script>
+    <div id="businesslist">
+      <table class="table" id="businesstable">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Business</th>
+            <th>Address</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </div>
+    <div id="playlist"><iframe id="spot_iframe" src="https://embed.spotify.com/?uri=spotify:user:12185101777:playlist:5tf9FWxu83AbfekxjX9v2H" width=50% height="305" frameborder="0" allowtransparency="true"></iframe></div>
+  </body>
+</html>

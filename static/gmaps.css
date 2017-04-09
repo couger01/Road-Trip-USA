@@ -1,0 +1,47 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+	float: left;
+	height: 50%;
+	width: 50%;
+}
+
+#businesslist {
+	float: right;
+	height: 100%;
+	width: 50%;
+}
+
+#playlist {
+	
+}
+
+#businesstable {
+    font-family: arial, sans-serif;
+    /*border: 1px solid #5e6163;*/
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+td, th {
+    border: none;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #ff0000;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
