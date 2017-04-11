@@ -7,13 +7,14 @@ URL Link
 */
 
 function myTable(data){
- 	console.log("good");
-	var obj = data;
-	var businesses = obj["businesses"];
+ 	console.log("good");	
+	var obj = JSON.parse(data);
+	var businesses = obj.results[0].businesses;
 	console.log(businesses);
+	
 	//var businesses = obj["results"]["businesses"];
-	//clearTable();
-	//buildTable(businesses);
+	clearTable();
+	buildTable(businesses);
 }
 
 function clearTable(){
